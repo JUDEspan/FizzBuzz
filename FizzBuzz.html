@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fizzbuzz.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.css">
+</head>
+<body>
+    <center class="shadow ">
+            <h1>Fizz Buzz</h1>
+        <div class="row px-5 mt-3 ">
+            <input type="number" class="form-control ps-2  " placeholder="Enter your number" id="num">
+            <button onclick="check()" class="btn btn-info" >Check</button>
+        </div>
+            <div id="display" class="h4 mt-5 w-50 bg-white"></div>
+    </center>
+    <script>
+        function check(){
+        var input = num.value
+            if(input==""){
+                display.innerHTML = "Alaye enter something jare"
+            }else if(input%5==0 && input%3==0){
+                console.log("Fizz-Buzz");
+                display.innerHTML = "Fizz-Buzz"
+            }else if(input%3==0){
+                console.log("Fizz");
+                display.innerHTML = "Fizz"
+            }else if(input%5==0){
+                console.log("Buzz");
+                display.innerHTML = "Buzz"
+            }else{
+                display.innerHTML = "It is a natural number"
+            }
+        }
+    </script>
+</body>
+</html>
